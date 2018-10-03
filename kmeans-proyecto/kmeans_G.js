@@ -1,44 +1,50 @@
-var cluserSize = 2;
-var data = [['185','72'],['170','56'],['168','60'],['179','68'],['182','72'],['188','77']]
+function kMeans() {
 
-//Cluster size given, 2
-var Clusers_Base = [];
-var Clusters = [];
-var distancesHolder = [];
+    var cluserSize = parseInt(document.getElementById("numClusters").value);
+    
 
-for(var i = 0; i < cluserSize; i++){
-    Clusers_Base.push(data[i]);
-    Clusters.push([]);
-    distancesHolder.push(0);
-}
+    var data = [['185', '72'], ['170', '56'], ['168', '60'], ['179', '68'], ['182', '72'], ['188', '77']]
 
-function calculateEuclidian(sampleMain, sampleCluster){
-    return Math.sqrt(Math.pow((sampleCluster[0]-sampleMain[0]),2)+Math.pow((sampleCluster[1]-sampleMain[1]),2))
-}
+    //Cluster size given, 2
+    var Clusers_Base = [];
+    var Clusters = [];
+    var distancesHolder = [];
 
-function assignCluster(euclidianDistances){
-    var minVal = euclidianDistances[0];
-    var minVal_Counter = 0;
-    for(var i = 0; i < euclidianDistances.length; i++){
-        if(minVal > euclidianDistances[i]){
-            minVal = euclidianDistances[i];
-            minVal_Counter = i;
+    for (var i = 0; i < cluserSize; i++) {
+        Clusers_Base.push(data[i]);
+        Clusters.push([]);
+        distancesHolder.push(0);
+    }
+
+    function calculateEuclidian(sampleMain, sampleCluster) {
+        return Math.sqrt(Math.pow((sampleCluster[0] - sampleMain[0]), 2) + Math.pow((sampleCluster[1] - sampleMain[1]), 2))
+    }
+
+    function assignCluster(euclidianDistances) {
+        var minVal = euclidianDistances[0];
+        var minVal_Counter = 0;
+        for (var i = 0; i < euclidianDistances.length; i++) {
+            if (minVal > euclidianDistances[i]) {
+                minVal = euclidianDistances[i];
+                minVal_Counter = i;
+            }
         }
+        return minVal_Counter;
     }
-    return minVal_Counter;
-}
 
-var sample = data[0];
+    var sample = data[0];
 
-for(var i = 0; i < data.length; i++){
-    sample = data[i];
-    for(var j = 0; j < cluserSize; j++){
-        distancesHolder[j] = calculateEuclidian(sample, Clusers_Base[j]);
+    for (var i = 0; i < data.length; i++) {
+        sample = data[i];
+        for (var j = 0; j < cluserSize; j++) {
+            distancesHolder[j] = calculateEuclidian(sample, Clusers_Base[j]);
+        }
+        Clusters[assignCluster(distancesHolder)].push(sample);
     }
-    Clusters[assignCluster(distancesHolder)].push(sample);
-}
 
-console.log(Clusters);
+    console.log(Clusters);
+    
+}
 
 /*
 Ok te preguntarás que diablos. Trataré de explicarme lo mejor que pueda. Igual el video es muy fácil de entender.
