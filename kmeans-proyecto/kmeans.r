@@ -5,6 +5,7 @@ insurance <- read.csv(aseguradora, encoding="UTF-8", header=TRUE, sep=",", na.st
 insurance.scale <- as.data.frame(scale(insurance[,5:9])) # escalar los datos
 set.seed(80) # fijar semilla
 
+# Valor de K es = 4 en este caso
 insurance.km <- kmeans(insurance.scale, centers = 4) # Realizamos clustering
 names(insurance.km) # contenido del objeto
 head(insurance.km$cluster) # asignación observaciones a clusters
