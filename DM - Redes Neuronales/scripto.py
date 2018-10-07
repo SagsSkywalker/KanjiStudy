@@ -1,4 +1,5 @@
 import random
+import decimal as dc
 
 def main():
 	######################################################
@@ -8,18 +9,67 @@ def main():
 	#Se crea una matriz del tamaño suficiente para alojar
 	#los valores de la BD
 	items = getValuesMatrix(len(records), 4, records)
-	#Se selecciona el número de centroides deseado
-	#aleatoriamente
-	print('Centroids:', end='\t')
-	centNumber = input()
-	print('Iterations:', end='\t')
-	Iterations = input()
-	
+	#Centroides e iteraciones
+	centroids = [0]
+	i = 0
+	weights = 0
+	dp = 0
+	x = 0
+	highestWeight = 0
 
 	######################################################
 	#	Variables de entorno
 	######################################################
 
+	######################################################
+	#	Developement
+	######################################################
+
+	print('Centroids:', end='\t')
+	#Se selecciona el número de centroides deseado
+	#aleatoriamente y se regresa un arreglo con los
+	#números de los centroides
+	centroids = getWeightsPosition(len(records))
+	print('Iterations:', end='\t')
+	i = input()
+
+	#Se asigna un namaño apropiado para alojar los
+	#valores de los pesos según los centroides aleatorios
+	#generados anteriormente
+	weights = [[0 for i in range(4)] for j in range(len(centroids))]
+	dp = weights
+
+	#Obtener los pesos según los indices de los centroides 
+	#que se eligieron aleatoriamente
+	for ix, x in enumerate(centroids):
+		for y in range(4):
+			weights[ix][y] = items[x][y]
+	
+	#Se asigna un valor a x obteniendo aleatoriamente
+	#de la base de datos un registro
+	x = getRandomX(items)
+
+	#Se calcula el producto punto de cada uno de los
+	#registros de los pesos seleccionados con x
+	dp = dotProduct(weights, x)
+
+	#Se obtiene el índice del peso mayor a partir del
+	#producto punto y la suma de cada registro en la lista
+	#del mismo
+	highestWeight = getHighestWeight(dp, weightsSum(dp))
+
+	print(weights)
+	print(highestWeight)
+
+	#Se hace la suma del peso mayor con x, respectivamente,
+	#y se asigna el nuevo valor (normalizado) al peso en la 
+	#lista de pesos
+	weights[highestWeight] = sumHighestAndX(weights[highestWeight], x)
+	print(weights)
+
+	######################################################
+	#	Developement
+	######################################################
 
 #Se lee el archivo txt de la base de datos
 #y se retorna un array con las lineas que contiene
@@ -36,7 +86,7 @@ def readDataBase(name):
 #que contiene los registros de la BD
 def getValuesMatrix(rows, cols, records):
 	#Se crea la matriz de rows x cols
-	items = [[0]*cols]*rows
+	items = [[0 for i in range(cols)] for j in range(rows)]
 	for x in range(rows):
 		#Se obtienen los registros uno a uno y se guardan
 		#en record
@@ -53,6 +103,63 @@ def getValuesMatrix(rows, cols, records):
 #específicado para obtener los centroides
 def getRandom(lenght):
 	return random.randint(1,int(lenght))
+
+def getWeightsPosition(lenght):
+	number = input()
+	weights = [0]*int(number)
+	for x in range(int(number)):
+		weights[x] = getRandom(lenght)
+	return weights
+
+def getRandomX(records):
+	random = getRandom(len(records))
+	x = [0]*4
+	for i in range(4):
+		x[i] = float(records[random][i])
+	return x
+
+def dotProduct(w, x):
+	result = [[0 for i in range(len(x))] for j in range(len(w))]
+	for i in range(len(w)):
+		for j in range(4):
+			result[i][j] = (float(w[i][j]) * float(x[j]))
+	return result
+
+def weightsSum(dp):
+	result = [[0] for i in range(4)]
+	result = [sum(x) for x in dp]
+	return result
+
+def getHighestWeight(dp, wsum):
+	x = quickSort(wsum)
+	for ix, i in enumerate(wsum):
+		if i == x[-1]:
+			return ix
+
+def sumHighestAndX(highest, x):
+	result = [0 for i in range(len(x))]
+	print(result)
+	print(highest)
+	print(x)
+	for ix, i in enumerate(highest):
+		result[ix] = (float(i) + float(x[ix]))
+	print(result)
+	return result
+
+#def normalize(arr):
+
+
+def quickSort(arr):
+	if len(arr) == 0:
+		return []
+	left = []
+	right = []
+	p = [arr[0]]
+
+	for i in range(1, len(arr)):
+		left.append(arr[i]) if arr[i] < p[0] else right.append(arr[i])
+
+	return quickSort(left) + p + quickSort(right);
 
 if __name__ == '__main__':
 	main()
