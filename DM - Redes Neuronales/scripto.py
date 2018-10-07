@@ -1,5 +1,6 @@
 import random
 import decimal as dc
+import math as m
 
 def main():
 	######################################################
@@ -44,28 +45,28 @@ def main():
 	for ix, x in enumerate(centroids):
 		for y in range(4):
 			weights[ix][y] = items[x][y]
-	
-	#Se asigna un valor a x obteniendo aleatoriamente
-	#de la base de datos un registro
-	x = getRandomX(items)
 
-	#Se calcula el producto punto de cada uno de los
-	#registros de los pesos seleccionados con x
-	dp = dotProduct(weights, x)
+	for n in range(int(i)):		
+		#Se asigna un valor a x obteniendo aleatoriamente
+		#de la base de datos un registro
+		x = getRandomX(items)
 
-	#Se obtiene el índice del peso mayor a partir del
-	#producto punto y la suma de cada registro en la lista
-	#del mismo
-	highestWeight = getHighestWeight(dp, weightsSum(dp))
+		#Se calcula el producto punto de cada uno de los
+		#registros de los pesos seleccionados con x
+		dp = dotProduct(weights, x)
 
-	print(weights)
-	print(highestWeight)
+		#Se obtiene el índice del peso mayor a partir del
+		#producto punto y la suma de cada registro en la lista
+		#del mismo
+		highestWeight = getHighestWeight(dp, weightsSum(dp))
 
-	#Se hace la suma del peso mayor con x, respectivamente,
-	#y se asigna el nuevo valor (normalizado) al peso en la 
-	#lista de pesos
-	weights[highestWeight] = sumHighestAndX(weights[highestWeight], x)
-	print(weights)
+		#print(f'weights =\t{weights}\nX =\t\t{x}\ndotProd =\t{dp}\nhighest =\t{weights[highestWeight]}\n')
+
+		#Se hace la suma del peso mayor con x, respectivamente,
+		#y se asigna el nuevo valor (normalizado) al peso en la 
+		#lista de pesos
+		weights[highestWeight] = sumHighestAndX(weights[highestWeight], x)
+	print(f'{weights}\nOK')
 
 	######################################################
 	#	Developement
@@ -102,7 +103,7 @@ def getValuesMatrix(rows, cols, records):
 #Se selecciona un número al azar el número de veces
 #específicado para obtener los centroides
 def getRandom(lenght):
-	return random.randint(1,int(lenght))
+	return random.randint(0,int(lenght-1))
 
 def getWeightsPosition(lenght):
 	number = input()
@@ -113,8 +114,8 @@ def getWeightsPosition(lenght):
 
 def getRandomX(records):
 	random = getRandom(len(records))
-	x = [0]*4
-	for i in range(4):
+	x = [0 for i in range(4)]
+	for i in range(len(x)):
 		x[i] = float(records[random][i])
 	return x
 
@@ -131,35 +132,36 @@ def weightsSum(dp):
 	return result
 
 def getHighestWeight(dp, wsum):
-	x = quickSort(wsum)
+	x = max(wsum)
 	for ix, i in enumerate(wsum):
-		if i == x[-1]:
+		if i == x:
 			return ix
 
 def sumHighestAndX(highest, x):
 	result = [0 for i in range(len(x))]
-	print(result)
-	print(highest)
-	print(x)
 	for ix, i in enumerate(highest):
 		result[ix] = (float(i) + float(x[ix]))
-	print(result)
-	return result
+	return normalize(result)
 
-#def normalize(arr):
+def normalize(arr):
+	square = []
+	[square.append(pow(i, 2)) for i in arr]
+	square = float(m.sqrt(sum(square)))
+	for ix, i in enumerate(arr):
+		arr[ix] = (float(i) / float(square))
+	return arr
 
-
-def quickSort(arr):
-	if len(arr) == 0:
-		return []
-	left = []
-	right = []
-	p = [arr[0]]
-
-	for i in range(1, len(arr)):
-		left.append(arr[i]) if arr[i] < p[0] else right.append(arr[i])
-
-	return quickSort(left) + p + quickSort(right);
+#def quickSort(arr):
+#	if len(arr) == 0:
+#		return []
+#	left = []
+#	right = []
+#	p = [arr[0]]
+#
+#	for i in range(1, len(arr)):
+#		left.append(arr[i]) if arr[i] < p[0] else right.append(arr[i])
+#
+#	return quickSort(left) + p + quickSort(right);
 
 if __name__ == '__main__':
 	main()
