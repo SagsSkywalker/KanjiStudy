@@ -18,8 +18,12 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
+<<<<<<< HEAD
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
+=======
+                                      <entry key="backgroundImage" value="C:\Users\sagss\Desktop\kanjilel.png" />
+>>>>>>> AndroidApp
                                       <entry key="foregroundImage" value="C:\Users\sagss\Desktop\kanjilel.png" />
                                       <entry key="outputName" value="select_kanji" />
                                     </map>

@@ -14,15 +14,22 @@ class KanjiListElement(): Parcelable{
     var kunyomi: String = ""
     var onyomi: String = ""
     var meaning: String = ""
+<<<<<<< HEAD
     var image: Int = R.mipmap.select_kanji
     var kanji: String = ""
+=======
+    var image: Int = R.mipmap.selectKanji
+>>>>>>> AndroidApp
 
     constructor(parcel: Parcel) : this() {
         kunyomi = parcel.readString()
         onyomi = parcel.readString()
         meaning = parcel.readString()
         image = parcel.readInt()
+<<<<<<< HEAD
         kanji = parcel.readString()
+=======
+>>>>>>> AndroidApp
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -30,7 +37,10 @@ class KanjiListElement(): Parcelable{
         parcel.writeString(onyomi)
         parcel.writeString(meaning)
         parcel.writeInt(image)
+<<<<<<< HEAD
         parcel.writeString(kanji)
+=======
+>>>>>>> AndroidApp
     }
 
     override fun describeContents(): Int {
@@ -53,6 +63,7 @@ class KanjiListAdapter(private val context: Context, private val dataSource: Arr
     private val inflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+<<<<<<< HEAD
         val rowView = inflater.inflate(R.layout.kanji_list_element, parent, false)
         //Declarar vistas
         val image = rowView.findViewById(R.id.img_list_kanji_element_image) as ImageView
@@ -60,13 +71,23 @@ class KanjiListAdapter(private val context: Context, private val dataSource: Arr
         val kunyomi = rowView.findViewById(R.id.txt_list_kanji_element_kun) as TextView
         val onyomi = rowView.findViewById(R.id.txt_list_kanji_element_on) as TextView
         val kanji = rowView.findViewById(R.id.txt_list_kanji_element_kanji) as TextView
+=======
+        val rowView = inflater.inflate(R.layout.kanji_element, parent, false)
+        //Declarar vistas
+        val image = rowView.findViewById(R.id.kanji_element_image) as ImageView
+        val meaning = rowView.findViewById(R.id.kanji_element_meaning) as TextView
+        val kunyomi = rowView.findViewById(R.id.kanji_element_kunyomi) as TextView
+>>>>>>> AndroidApp
         //Armar el Kanji Element
         val kanjiElement = getItem(position) as KanjiListElement
         image.id = kanjiElement.image
         meaning.text = kanjiElement.meaning
         kunyomi.text = kanjiElement.kunyomi
+<<<<<<< HEAD
         kanji.text = kanjiElement.kanji
         onyomi.text = kanjiElement.onyomi
+=======
+>>>>>>> AndroidApp
         return rowView
     }
 
