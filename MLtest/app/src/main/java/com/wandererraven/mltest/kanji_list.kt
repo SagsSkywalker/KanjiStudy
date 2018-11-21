@@ -1,5 +1,6 @@
 package com.wandererraven.mltest
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_kanji_list.*
@@ -35,5 +36,13 @@ class kanji_list : AppCompatActivity() {
         listKanjis.add(kanjiElement3)
         val adapter = KanjiListAdapter(this, listKanjis)
         lst_kanji_list.adapter = adapter
+
+        lst_kanji_list.setOnItemClickListener{
+            parent, view, position, id ->
+            //Toast.makeText(this, listMarkers[position].titulo,Toast.LENGTH_SHORT).show()
+            val detailActivity = Intent(applicationContext, kanji_detail::class.java)
+            detailActivity.putExtra("kanjiElement",listKanjis[position])
+            startActivity(detailActivity)
+        }
     }
 }

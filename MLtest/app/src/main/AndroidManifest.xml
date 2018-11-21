@@ -25,7 +25,8 @@
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"
             android:value="ocr" />
 
-        <activity android:name=".kanji_list"></activity>
+        <activity android:name=".kanji_list" />
+        <activity android:name=".kanji_detail"></activity>
     </application>
 
 </manifest>
