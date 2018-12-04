@@ -1,0 +1,826 @@
+﻿[
+	{
+		"kanji": "一",
+		"kun": "hito",
+		"on": "ichi",
+		"meaning": "one",
+		"strokes": "1",
+		"type": "noun"
+	},
+	{
+		"kanji": "七",
+		"kun": "nana",
+		"on": "shichi",
+		"meaning": "seven",
+		"strokes": "2",
+		"type": "noun"
+	},
+	{
+		"kanji": "万",
+		"kun": "yorozu",
+		"on": "man",
+		"meaning": "ten thousand",
+		"strokes": "3",
+		"type": "noun"
+	},
+	{
+		"kanji": "三",
+		"kun": "mi",
+		"on": "san",
+		"meaning": "three",
+		"strokes": "3",
+		"type": "noun"
+	},
+	{
+		"kanji": "上",
+		"kun": "ue",
+		"on": "jou",
+		"meaning": "above",
+		"strokes": "3",
+		"type": "adj"
+	},
+	{
+		"kanji": "下",
+		"kun": "shita",
+		"on": "ka",
+		"meaning": "below",
+		"strokes": "3",
+		"type": "adj"
+	},
+	{
+		"kanji": "中",
+		"kun": "naka",
+		"on": "chuu",
+		"meaning": "middle",
+		"strokes": "4",
+		"type": "adj"
+	},
+	{
+		"kanji": "九",
+		"kun": "kokono",
+		"on": "kyuu",
+		"meaning": "nine",
+		"strokes": "2",
+		"type": "noun"
+	},
+	{
+		"kanji": "二",
+		"kun": "futa",
+		"on": "ni",
+		"meaning": "two",
+		"strokes": "2",
+		"type": "noun"
+	},
+	{
+		"kanji": "五",
+		"kun": "itsu",
+		"on": "go",
+		"meaning": "five",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "人",
+		"kun": "hito",
+		"on": "jin",
+		"meaning": "person",
+		"strokes": "2",
+		"type": "noun"
+	},
+	{
+		"kanji": "今",
+		"kun": "ima",
+		"on": "kon",
+		"meaning": "now",
+		"strokes": "4",
+		"type": "adj"
+	},
+	{
+		"kanji": "休",
+		"kun": "yasu",
+		"on": "kyuu",
+		"meaning": "rest",
+		"strokes": "6",
+		"type": "verb"
+	},
+	{
+		"kanji": "会",
+		"kun": "au",
+		"on": "kai",
+		"meaning": "meet",
+		"strokes": "6",
+		"type": "verb"
+	},
+	{
+		"kanji": "何",
+		"kun": "nani",
+		"on": "ka",
+		"meaning": "what",
+		"strokes": "7",
+		"type": "noun"
+	},
+	{
+		"kanji": "先",
+		"kun": "saki",
+		"on": "sen",
+		"meaning": "before",
+		"strokes": "6",
+		"type": "adj"
+	},
+	{
+		"kanji": "入",
+		"kun": "i",
+		"on": "nyuu",
+		"meaning": "enter",
+		"strokes": "2",
+		"type": "verb"
+	},
+	{
+		"kanji": "八",
+		"kun": "ya",
+		"on": "hachi",
+		"meaning": "eight",
+		"strokes": "2",
+		"type": "noun"
+	},
+	{
+		"kanji": "六",
+		"kun": "mu",
+		"on": "roku",
+		"meaning": "six",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "円",
+		"kun": "maru",
+		"on": "en",
+		"meaning": "yen",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "出",
+		"kun": "de",
+		"on": "shutsu",
+		"meaning": "exit",
+		"strokes": "5",
+		"type": "verb"
+	},
+	{
+		"kanji": "分",
+		"kun": "wa",
+		"on": "bun",
+		"meaning": "minute",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "前",
+		"kun": "mae",
+		"on": "zen",
+		"meaning": "front",
+		"strokes": "9",
+		"type": "adj"
+	},
+	{
+		"kanji": "北",
+		"kun": "kita",
+		"on": "hoku",
+		"meaning": "north",
+		"strokes": "5",
+		"type": "adj"
+	},
+	{
+		"kanji": "十",
+		"kun": "too",
+		"on": "juu",
+		"meaning": "ten",
+		"strokes": "2",
+		"type": "noun"
+	},
+	{
+		"kanji": "千",
+		"kun": "chi",
+		"on": "sen",
+		"meaning": "thousand",
+		"strokes": "3",
+		"type": "noun"
+	},
+	{
+		"kanji": "午",
+		"kun": "uma",
+		"on": "go",
+		"meaning": "noon",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "半",
+		"kun": "naka",
+		"on": "han",
+		"meaning": "half",
+		"strokes": "5",
+		"type": "adj"
+	},
+	{
+		"kanji": "南",
+		"kun": "minami",
+		"on": "nan",
+		"meaning": "south",
+		"strokes": "9",
+		"type": "adj"
+	},
+	{
+		"kanji": "友",
+		"kun": "tomo",
+		"on": "yuu",
+		"meaning": "friend",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "口",
+		"kun": "kuchi",
+		"on": "kou",
+		"meaning": "mouth",
+		"strokes": "3",
+		"type": "noun"
+	},
+	{
+		"kanji": "古",
+		"kun": "furu",
+		"on": "ko",
+		"meaning": "old",
+		"strokes": "5",
+		"type": "adj"
+	},
+	{
+		"kanji": "右",
+		"kun": "migi",
+		"on": "u",
+		"meaning": "right",
+		"strokes": "5",
+		"type": "adj"
+	},
+	{
+		"kanji": "名",
+		"kun": "na",
+		"on": "mei",
+		"meaning": "name",
+		"strokes": "6",
+		"type": "noun"
+	},
+	{
+		"kanji": "四",
+		"kun": "nishi",
+		"on": "sei",
+		"meaning": "west",
+		"strokes": "6",
+		"type": "adj"
+	},
+	{
+		"kanji": "国",
+		"kun": "kuni",
+		"on": "koku",
+		"meaning": "country",
+		"strokes": "8",
+		"type": "noun"
+	},
+	{
+		"kanji": "土",
+		"kun": "tsuchi",
+		"on": "do",
+		"meaning": "soil",
+		"strokes": "3",
+		"type": "noun"
+	},
+	{
+		"kanji": "外",
+		"kun": "soto",
+		"on": "gai",
+		"meaning": "outside",
+		"strokes": "5",
+		"type": "adj"
+	},
+	{
+		"kanji": "多",
+		"kun": "oo",
+		"on": "ta",
+		"meaning": "many",
+		"strokes": "6",
+		"type": "adj"
+	},
+	{
+		"kanji": "大",
+		"kun": "oo",
+		"on": "dai",
+		"meaning": "large",
+		"strokes": "3",
+		"type": "adj"
+	},
+	{
+		"kanji": "天",
+		"kun": "amatsu",
+		"on": "ten",
+		"meaning": "heavens",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "女",
+		"kun": "onna",
+		"on": "jo",
+		"meaning": "woman",
+		"strokes": "3",
+		"type": "noun"
+	},
+	{
+		"kanji": "子",
+		"kun": "ko",
+		"on": "shi",
+		"meaning": "child",
+		"strokes": "3",
+		"type": "noun"
+	},
+	{
+		"kanji": "学",
+		"kun": "mana",
+		"on": "gaku",
+		"meaning": "study",
+		"strokes": "8",
+		"type": "noun"
+	},
+	{
+		"kanji": "安",
+		"kun": "yasu",
+		"on": "an",
+		"meaning": "relax",
+		"strokes": "6",
+		"type": "adj"
+	},
+	{
+		"kanji": "小",
+		"kun": "chi",
+		"on": "shou",
+		"meaning": "small",
+		"strokes": "3",
+		"type": "adj"
+	},
+	{
+		"kanji": "少",
+		"kun": "suku",
+		"on": "shou",
+		"meaning": "little",
+		"strokes": "4",
+		"type": "adj"
+	},
+	{
+		"kanji": "山",
+		"kun": "yama",
+		"on": "san",
+		"meaning": "mountain",
+		"strokes": "3",
+		"type": "noun"
+	},
+	{
+		"kanji": "川",
+		"kun": "kawa",
+		"on": "sen",
+		"meaning": "river",
+		"strokes": "3",
+		"type": "noun"
+	},
+	{
+		"kanji": "左",
+		"kun": "hidari",
+		"on": "san",
+		"meaning": "left",
+		"strokes": "5",
+		"type": "adj"
+	},
+	{
+		"kanji": "年",
+		"kun": "toshi",
+		"on": "nen",
+		"meaning": "year",
+		"strokes": "6",
+		"type": "noun"
+	},
+	{
+		"kanji": "店",
+		"kun": "mise",
+		"on": "ten",
+		"meaning": "store",
+		"strokes": "8",
+		"type": "noun"
+	},
+	{
+		"kanji": "後",
+		"kun": "nochi",
+		"on": "go",
+		"meaning": "behind",
+		"strokes": "9",
+		"type": "adj"
+	},
+	{
+		"kanji": "手",
+		"kun": "te",
+		"on": "shu",
+		"meaning": "hand",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "新",
+		"kun": "atara",
+		"on": "shin",
+		"meaning": "new",
+		"strokes": "13",
+		"type": "adj"
+	},
+	{
+		"kanji": "日",
+		"kun": "hi",
+		"on": "nichi",
+		"meaning": "day",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "時",
+		"kun": "toki",
+		"on": "jin",
+		"meaning": "time",
+		"strokes": "10",
+		"type": "noun"
+	},
+	{
+		"kanji": "書",
+		"kun": "ka",
+		"on": "sho",
+		"meaning": "write",
+		"strokes": "10",
+		"type": "verb"
+	},
+	{
+		"kanji": "月",
+		"kun": "tsuki",
+		"on": "getsu",
+		"meaning": "moon",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "木",
+		"kun": "ki",
+		"on": "boku",
+		"meaning": "tree",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "本",
+		"kun": "moto",
+		"on": "hon",
+		"meaning": "book",
+		"strokes": "5",
+		"type": "noon"
+	},
+	{
+		"kanji": "来",
+		"kun": "ku",
+		"on": "rai",
+		"meaning": "come",
+		"strokes": "7",
+		"type": "verb"
+	},
+	{
+		"kanji": "東",
+		"kun": "higashi",
+		"on": "tou",
+		"meaning": "east",
+		"strokes": "8",
+		"type": "adj"
+	},
+	{
+		"kanji": "校",
+		"kun": "",
+		"on": "kou",
+		"meaning": "exam",
+		"strokes": "10",
+		"type": "noun"
+	},
+	{
+		"kanji": "母",
+		"kun": "haha",
+		"on": "bo",
+		"meaning": "mother",
+		"strokes": "5",
+		"type": "noun"
+	},
+	{
+		"kanji": "毎",
+		"kun": "goto",
+		"on": "mai",
+		"meaning": "every",
+		"strokes": "6",
+		"type": "noun"
+	},
+	{
+		"kanji": "気",
+		"kun": "iki",
+		"on": "ki",
+		"meaning": "spirit",
+		"strokes": "6",
+		"type": "noun"
+	},
+	{
+		"kanji": "水",
+		"kun": "mizu",
+		"on": "sui",
+		"meaning": "water",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "火",
+		"kun": "hi",
+		"on": "ka",
+		"meaning": "fire",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "父",
+		"kun": "chichi",
+		"on": "fu",
+		"meaning": "father",
+		"strokes": "4",
+		"type": "noun"
+	},
+	{
+		"kanji": "生",
+		"kun": "i",
+		"on": "sei",
+		"meaning": "life",
+		"strokes": "5",
+		"type": "noun"
+	},
+	{
+		"kanji": "男",
+		"kun": "otoko",
+		"on": "dan",
+		"meaning": "male",
+		"strokes": "7",
+		"type": "noun"
+	},
+	{
+		"kanji": "白",
+		"kun": "shiro",
+		"on": "haku",
+		"meaning": "white",
+		"strokes": "5",
+		"type": "adj"
+	},
+	{
+		"kanji": "百",
+		"kun": "momo",
+		"on": "hyaku",
+		"meaning": "hundred",
+		"strokes": "6",
+		"type": "noun"
+	},
+	{
+		"kanji": "目",
+		"kun": "me",
+		"on": "moku",
+		"meaning": "eye",
+		"strokes": "5",
+		"type": "noun"
+	},
+	{
+		"kanji": "社",
+		"kun": "yashiro",
+		"on": "sha",
+		"meaning": "company",
+		"strokes": "7",
+		"type": "noun"
+	},
+	{
+		"kanji": "空",
+		"kun": "sora",
+		"on": "kuu",
+		"meaning": "sky",
+		"strokes": "8",
+		"type": "noun"
+	},
+	{
+		"kanji": "立",
+		"kun": "ta",
+		"on": "ritsu",
+		"meaning": "rise",
+		"strokes": "5",
+		"type": "verb"
+	},
+	{
+		"kanji": "耳",
+		"kun": "mimi",
+		"on": "ji",
+		"meaning": "ear",
+		"strokes": "6",
+		"type": "noun"
+	},
+	{
+		"kanji": "聞",
+		"kun": "ki",
+		"on": "bun",
+		"meaning": "hear",
+		"strokes": "14",
+		"type": "verb"
+	},
+	{
+		"kanji": "花",
+		"kun": "hana",
+		"on": "ka",
+		"meaning": "flower",
+		"strokes": "7",
+		"type": "noun"
+	},
+	{
+		"kanji": "行",
+		"kun": "i",
+		"on": "kou",
+		"meaning": "going",
+		"strokes": "6",
+		"type": "verb"
+	},
+	{
+		"kanji": "西",
+		"kun": "nishi",
+		"on": "sei",
+		"meaning": "west",
+		"strokes": "6",
+		"type": "adj"
+	},
+	{
+		"kanji": "見",
+		"kun": "mi",
+		"on": "ken",
+		"meaning": "see",
+		"strokes": "7",
+		"type": "verb"
+	},
+	{
+		"kanji": "言",
+		"kun": "koto",
+		"on": "gen",
+		"meaning": "word",
+		"strokes": "7",
+		"type": "noun"
+	},
+	{
+		"kanji": "話",
+		"kun": "hana",
+		"on": "wa",
+		"meaning": "talk",
+		"strokes": "13",
+		"type": "verb"
+	},
+	{
+		"kanji": "語",
+		"kun": "kata",
+		"on": "go",
+		"meaning": "language",
+		"strokes": "14",
+		"type": "noun"
+	},
+	{
+		"kanji": "読",
+		"kun": "yo",
+		"on": "doku",
+		"meaning": "read",
+		"strokes": "14",
+		"type": "verb"
+	},
+	{
+		"kanji": "買",
+		"kun": "ka",
+		"on": "bai",
+		"meaning": "buy",
+		"strokes": "12",
+		"type": "verb"
+	},
+	{
+		"kanji": "足",
+		"kun": "ashi",
+		"on": "soku",
+		"meaning": "leg",
+		"strokes": "7",
+		"type": "noun"
+	},
+	{
+		"kanji": "車",
+		"kun": "kuruma",
+		"on": "sha",
+		"meaning": "car",
+		"strokes": "7",
+		"type": "noun"
+	},
+	{
+		"kanji": "週",
+		"kun": "",
+		"on": "shuu",
+		"meaning": "week",
+		"strokes": "11",
+		"type": "noun"
+	},
+	{
+		"kanji": "道",
+		"kun": "michi",
+		"on": "dou",
+		"meaning": "street",
+		"strokes": "12",
+		"type": "noun"
+	},
+	{
+		"kanji": "金",
+		"kun": "kane",
+		"on": "kin",
+		"meaning": "gold",
+		"strokes": "8",
+		"type": "noun"
+	},
+	{
+		"kanji": "長",
+		"kun": "naga",
+		"on": "chou",
+		"meaning": "long",
+		"strokes": "8",
+		"type": "adj"
+	},
+	{
+		"kanji": "間",
+		"kun": "aida",
+		"on": "kan",
+		"meaning": "interval",
+		"strokes": "12",
+		"type": "noun"
+	},
+	{
+		"kanji": "雨",
+		"kun": "ame",
+		"on": "u",
+		"meaning": "rain",
+		"strokes": "8",
+		"type": "noun"
+	},
+	{
+		"kanji": "電",
+		"kun": "",
+		"on": "den",
+		"meaning": "electricity",
+		"strokes": "13",
+		"type": "noun"
+	},
+	{
+		"kanji": "食",
+		"kun": "ta",
+		"on": "shoku",
+		"meaning": "eat",
+		"strokes": "9",
+		"type": "verb"
+	},
+	{
+		"kanji": "飲",
+		"kun": "no",
+		"on": "in",
+		"meaning": "drink",
+		"strokes": "12",
+		"type": "verb"
+	},
+	{
+		"kanji": "駅",
+		"kun": "",
+		"on": "eki",
+		"meaning": "station",
+		"strokes": "14",
+		"type": "noun"
+	},
+	{
+		"kanji": "高",
+		"kun": "taka",
+		"on": "kou",
+		"meaning": "tall",
+		"strokes": "10",
+		"type": "adj"
+	},
+	{
+		"kanji": "魚",
+		"kun": "sakana",
+		"on": "gyo",
+		"meaning": "fish",
+		"strokes": "11",
+		"type": "noun"
+	}
+]
